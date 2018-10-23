@@ -9,7 +9,6 @@ C:\programas\SatoshiMachine\bin\Debug\RestSharp.xml
 C:\programas\SatoshiMachine\obj\Debug\ArbitrageNacional.csproj.CoreCompileInputs.cache
 C:\programas\SatoshiMachine\obj\Debug\SatoshiMachine.exe
 C:\programas\SatoshiMachine\obj\Debug\SatoshiMachine.pdb
-C:\programas\SatoshiMachine\ArbitrageNacional\obj\Debug\ArbitrageNacional.csprojResolveAssemblyReference.cache
 C:\programas\SatoshiMachine\ArbitrageNacional\obj\Debug\ArbitrageNacional.csproj.CoreCompileInputs.cache
 C:\programas\SatoshiMachine\ArbitrageNacional\obj\Debug\SatoshiMachine.exe
 C:\programas\SatoshiMachine\ArbitrageNacional\obj\Debug\SatoshiMachine.pdb
