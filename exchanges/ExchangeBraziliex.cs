@@ -18,10 +18,10 @@ public class ExchangeBraziliex : ExchangeBase, IExchange
     public ExchangeBraziliex()
     {
         this.urlTicker = "https://braziliex.com.br/";
-        this.key = "";
-        this.secret = "";
+        this.key = Program.jConfig["braziliex_key"].ToString();
+        this.secret = Program.jConfig["braziliex_secret"].ToString();
         this.lockQuantity = false;
-        this.fee = 0.5m;
+        this.fee = decimal.Parse(Program.jConfig["bitcointrade_fee"].ToString());
     }
 
     public decimal getFee()

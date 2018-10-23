@@ -52,7 +52,7 @@
       <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="RestSharp">
-      <HintPath>..\RobotArbitrage\bin\Debug\RestSharp.dll</HintPath>
+      <HintPath>..\..\MoneyMachineConsole-master\packages\RestSharp.105.2.3\lib\net45\RestSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -80,10 +80,7 @@
     <Compile Include="exchanges\ExchangeBase.cs" />
     <Compile Include="exchanges\ExchangeBitcoinTrade.cs" />
     <Compile Include="exchanges\ExchangeBraziliex.cs" />
-    <Compile Include="exchanges\ExchangeMercadoBitcoin.cs" />
     <Compile Include="exchanges\IExchange.cs" />
-    <Compile Include="exchanges\MercadoBitcoin\ClientBase.cs" />
-    <Compile Include="exchanges\MercadoBitcoin\MercadoBitcoinClient.cs" />
     <Compile Include="Http.cs" />
     <Compile Include="Logger.cs" />
     <Compile Include="Program.cs" />

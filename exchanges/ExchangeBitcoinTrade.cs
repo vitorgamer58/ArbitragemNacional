@@ -19,10 +19,10 @@ public class ExchangeBitcoinTrade : ExchangeBase, IExchange
     public ExchangeBitcoinTrade()
     {
         this.urlTicker = "https://bitcointrade.com.br";
-        this.key = "";
-        this.secret = "";
+        this.key = Program.jConfig["bitcointrade_key"].ToString();
+        this.secret = Program.jConfig["bitcointrade_secret"].ToString();
         this.lockQuantity = false;
-        this.fee = 0.5m;
+        this.fee = decimal.Parse( Program.jConfig["bitcointrade_fee"].ToString());
     }
 
     public decimal getFee()

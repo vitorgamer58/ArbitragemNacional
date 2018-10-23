@@ -35,7 +35,7 @@ using System.IO;
                 try
                 {
                     
-                        System.IO.StreamWriter w = new StreamWriter(@"C:\bot\logger.txt", true);
+                        System.IO.StreamWriter w = new StreamWriter(Program.location + DateTime.Now.ToString("yyyyMMdd") + "_logger.txt", true);
                         w.WriteLine(value);
                         w.Close();
                         w.Dispose();
