@@ -1,16 +1,16 @@
 {
 
 
-"bitcointrade_key":"U2FsdGVkX1/VBFZwkkBFD6BjL6TxbhVBO0MTv5Ixf64=",
+"bitcointrade_key":"",
 
-"bitcointrade_secret":"U2FsdGVkX1/VBFZwkkBFD6BjL6TxbhVBO0MTv5Ixf64=",
+"bitcointrade_secret":"",
 
 "bitcointrade_fee":0.5,
 
 
-"braziliex_key":"667843e1ac1eb8d066f653c8edf0259f9cfe7ef6dcab2670a718520416b4122a8415b7f11da9e1a563eca643730024b7226e270e0f0cfd6db73e8c1f9693e2f2",
+"braziliex_key":"",
 
-"braziliex_secret":"f061389294e008a0865a3f7ebd2924cb2b45ac57e3da517e2363e541d01e695e159552659771c04d4ee742b9e01a07cbf3aaee2b9001a2bac43a9fe713295c45",
+"braziliex_secret":"",
 
 "braziliex_fee":0.5,
 
