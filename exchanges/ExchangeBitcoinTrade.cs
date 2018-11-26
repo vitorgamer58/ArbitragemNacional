@@ -56,7 +56,7 @@ public class ExchangeBitcoinTrade : ExchangeBase, IExchange
         var response = client.Execute(request);
 
         String json = response.Content.ToString();
-
+        Logger.log(json);
 
         JContainer jContainer = (JContainer)JsonConvert.DeserializeObject(json, (typeof(JContainer)));
 
