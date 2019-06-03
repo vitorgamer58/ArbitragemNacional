@@ -57,3 +57,5 @@
 [02/06/2019 22:42:27]  https://braziliex.com/api/v1/privatecommand=balance
 [02/06/2019 22:42:28]  {"balance":{"nbr":"0.00000001","iop":"0.00000001","eth":"0.00000001","btc":"0.00000001","btg":"0.00000002","abc":"0.00000001","bch":"0.00000002","brzx":"72.00000000","brl":"0.01701128"}}
 [02/06/2019 22:42:28]  {"code":500,"message":"Erro interno"}
+[02/06/2019 22:52:25]  https://braziliex.com/api/v1/privatecommand=balance
+[02/06/2019 22:52:26]  {"success":0,"message":"Headers KEY/SIGN are incorrect"}

@@ -24,3 +24,10 @@ F:\Downloads\ArbitragemNacional-patch-1\ArbitragemNacional-patch-1\obj\Debug\Arb
 F:\Downloads\ArbitragemNacional-patch-1\ArbitragemNacional-patch-1\obj\Debug\ArbitrageNacional.csproj.CopyComplete
 F:\Downloads\ArbitragemNacional-patch-1\ArbitragemNacional-patch-1\obj\Debug\SatoshiMachine.exe
 F:\Downloads\ArbitragemNacional-patch-1\ArbitragemNacional-patch-1\obj\Debug\SatoshiMachine.pdb
+F:\Documents\GitHub\ArbitragemNacional\obj\Debug\ArbitrageNacional.csproj.CoreCompileInputs.cache
+F:\Documents\GitHub\ArbitragemNacional\obj\Debug\ArbitrageNacional.csproj.CopyComplete
+F:\Documents\GitHub\ArbitragemNacional\bin\Debug\ArbitragemNacional.exe.config
+F:\Documents\GitHub\ArbitragemNacional\bin\Debug\ArbitragemNacional.exe
+F:\Documents\GitHub\ArbitragemNacional\bin\Debug\ArbitragemNacional.pdb
+F:\Documents\GitHub\ArbitragemNacional\obj\Debug\ArbitragemNacional.exe
+F:\Documents\GitHub\ArbitragemNacional\obj\Debug\ArbitragemNacional.pdb
