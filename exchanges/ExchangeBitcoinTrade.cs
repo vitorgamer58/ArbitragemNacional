@@ -48,7 +48,7 @@ public class ExchangeBitcoinTrade : ExchangeBase, IExchange
     {
 
         ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
-        var client = new RestClient("https://api.bitcointrade.com.br/v1/");
+        var client = new RestClient("https://api.bitcointrade.com.br/v2/");
 
 
         var request = new RestRequest("/wallets/balance", Method.GET);
@@ -71,7 +71,7 @@ public class ExchangeBitcoinTrade : ExchangeBase, IExchange
 
         try
         {
-            String json = Http.get("https://api.bitcointrade.com.br/v1/public/BTC/ticker");
+            String json = Http.get("https://api.bitcointrade.com.br/v2/public/BRLBTC/ticker");
 
             JContainer j = (JContainer)JsonConvert.DeserializeObject(json, (typeof(JContainer)));
 
@@ -91,7 +91,7 @@ public class ExchangeBitcoinTrade : ExchangeBase, IExchange
         try
         {
 
-            String json = Http.get("https://api.bitcointrade.com.br/v1/public/BTC/orders");
+            String json = Http.get("https://api.bitcointrade.com.br/v2/public/BRLBTC/orders");
             JContainer jCointaner = (JContainer)JsonConvert.DeserializeObject(json, (typeof(JContainer)));
 
 
@@ -140,7 +140,7 @@ public class ExchangeBitcoinTrade : ExchangeBase, IExchange
         try
         {
 
-            String json = Http.get("https://api.bitcointrade.com.br/v1/public/BTC/orders");
+            String json = Http.get("https://api.bitcointrade.com.br/v2/public/BRLBTC/orders");
             JContainer jCointaner = (JContainer)JsonConvert.DeserializeObject(json, (typeof(JContainer)));
 
 
@@ -201,7 +201,7 @@ public class ExchangeBitcoinTrade : ExchangeBase, IExchange
             Operation operation = new Operation();
 
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
-            var request = (HttpWebRequest)WebRequest.Create("https://api.bitcointrade.com.br/v1/" + "market/create_order");
+            var request = (HttpWebRequest)WebRequest.Create("https://api.bitcointrade.com.br/v2/" + "market/create_order");
 
 
 
