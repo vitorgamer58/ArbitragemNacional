@@ -21,7 +21,7 @@ public class ExchangeBraziliex : ExchangeBase, IExchange
         this.key = Program.jConfig["braziliex_key"].ToString();
         this.secret = Program.jConfig["braziliex_secret"].ToString();
         this.lockQuantity = false;
-        this.fee = decimal.Parse(Program.jConfig["bitcointrade_fee"].ToString());
+        this.fee = decimal.Parse(Program.jConfig["braziliex_fee"].ToString());
     }
 
     public decimal getFee()
