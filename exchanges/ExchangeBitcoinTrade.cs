@@ -60,7 +60,7 @@ public class ExchangeBitcoinTrade : ExchangeBase, IExchange
 
         JContainer jContainer = (JContainer)JsonConvert.DeserializeObject(json, (typeof(JContainer)));
 
-        balance_btc = decimal.Parse(jContainer["data"][1]["available_amount"].ToString().Replace(".", ","));
+        balance_bch = decimal.Parse(jContainer["data"][1]["available_amount"].ToString().Replace(".", ","));
         balance_usdt = decimal.Parse(jContainer["data"][0]["available_amount"].ToString().Replace(".", ","));
 
         return json;
@@ -71,7 +71,7 @@ public class ExchangeBitcoinTrade : ExchangeBase, IExchange
 
         try
         {
-            String json = Http.get("https://api.bitcointrade.com.br/v2/public/BRLBTC/ticker");
+            String json = Http.get("https://api.bitcointrade.com.br/v2/public/BRLBCH/ticker");
 
             JContainer j = (JContainer)JsonConvert.DeserializeObject(json, (typeof(JContainer)));
 
@@ -91,7 +91,7 @@ public class ExchangeBitcoinTrade : ExchangeBase, IExchange
         try
         {
 
-            String json = Http.get("https://api.bitcointrade.com.br/v2/public/BRLBTC/orders");
+            String json = Http.get("https://api.bitcointrade.com.br/v2/public/BRLBCH/orders");
             JContainer jCointaner = (JContainer)JsonConvert.DeserializeObject(json, (typeof(JContainer)));
 
 
@@ -140,7 +140,7 @@ public class ExchangeBitcoinTrade : ExchangeBase, IExchange
         try
         {
 
-            String json = Http.get("https://api.bitcointrade.com.br/v2/public/BRLBTC/orders");
+            String json = Http.get("https://api.bitcointrade.com.br/v2/public/BRLBCH/orders");
             JContainer jCointaner = (JContainer)JsonConvert.DeserializeObject(json, (typeof(JContainer)));
 
 
@@ -205,7 +205,7 @@ public class ExchangeBitcoinTrade : ExchangeBase, IExchange
 
 
 
-            String parameters = "{\"pair\":\"BRLBTC\",\"amount\": " + amount.ToString().Replace(",", ".") + ",\"type\": \"" + type + "\",\"subtype\": \"limited\",\"unit_price\": " + Convert.ToString(price).Replace(",", ".") + "}";
+            String parameters = "{\"pair\":\"BRLBCH\",\"amount\": " + amount.ToString().Replace(",", ".") + ",\"type\": \"" + type + "\",\"subtype\": \"limited\",\"unit_price\": " + Convert.ToString(price).Replace(",", ".") + "}";
             var data = Encoding.ASCII.GetBytes(parameters);
             request.Headers["Authorization"] = "ApiToken " + this.getSecret();
             request.Method = "POST";
@@ -284,8 +284,8 @@ public class ExchangeBitcoinTrade : ExchangeBase, IExchange
 
     public decimal getBalance(string pair)
     {
-        if (pair.ToUpper().Trim().IndexOf("BTC") >= 0)
-            return balance_btc;
+        if (pair.ToUpper().Trim().IndexOf("BCH") >= 0)
+            return balance_bch;
         if (pair.ToUpper().Trim().IndexOf("USDT") >= 0)
             return balance_usdt;
 

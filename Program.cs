@@ -38,8 +38,8 @@ class Program
     class EntryArbitrage
     {
         public IExchange exchangeBuy;
-        public string pairBuy = "btc_brl";
-        public string pairSell = "btc_brl";
+        public string pairBuy = "bch_brl"; //braziliex.com/api/v1/public/ticker/bch_brl
+        public string pairSell = "bch_brl";
         public IExchange exchangeSell;
         public decimal perc = 1m;
         public decimal amount = 0.001m;
@@ -82,7 +82,7 @@ class Program
                 if (perc > entry.perc)
                 {
 
-                    if (entry.exchangeBuy.getBalance("USDT") >= (buy[0] * entry.amount) && entry.exchangeSell.getBalance("BTC") >= entry.amount)
+                    if (entry.exchangeBuy.getBalance("USDT") >= (buy[0] * entry.amount) && entry.exchangeSell.getBalance("BCH") >= entry.amount)
                     {
                         Task.Run(() =>
                         {
@@ -127,9 +127,9 @@ class Program
 
             EntryArbitrage entryBraziliexBitCointrade = new EntryArbitrage();
             entryBraziliexBitCointrade.exchangeBuy = new ExchangeBraziliex();
-            entryBraziliexBitCointrade.pairBuy = "btc_brl";
+            entryBraziliexBitCointrade.pairBuy = "bch_brl";
             entryBraziliexBitCointrade.exchangeSell = new ExchangeBitcoinTrade();
-            entryBraziliexBitCointrade.pairSell = "BRLBTC";
+            entryBraziliexBitCointrade.pairSell = "BRLBCH"; //api.bitcointrade.com.br/v2/public/BRLBCH/ticker
             entryBraziliexBitCointrade.sleep = int.Parse(Program.jConfig["sleep_default"].ToString()); ;
             entryBraziliexBitCointrade.perc = decimal.Parse(Program.jConfig["arbitrage_percent"].ToString()); ;
             entryBraziliexBitCointrade.amount = decimal.Parse(Program.jConfig["arbitrage_amount"].ToString());
@@ -139,9 +139,9 @@ class Program
 
             EntryArbitrage entryBitCointradeBraziliex = new EntryArbitrage();
             entryBitCointradeBraziliex.exchangeBuy = new ExchangeBitcoinTrade();
-            entryBitCointradeBraziliex.pairBuy = "BRLBTC";
+            entryBitCointradeBraziliex.pairBuy = "BRLBCH";
             entryBitCointradeBraziliex.exchangeSell = new ExchangeBraziliex();
-            entryBitCointradeBraziliex.pairSell = "btc_brl";
+            entryBitCointradeBraziliex.pairSell = "bch_brl";
             entryBitCointradeBraziliex.sleep = int.Parse(Program.jConfig["sleep_default"].ToString());
             entryBitCointradeBraziliex.perc = decimal.Parse(Program.jConfig["arbitrage_percent"].ToString()); ;
             entryBitCointradeBraziliex.amount = decimal.Parse(Program.jConfig["arbitrage_amount"].ToString());
