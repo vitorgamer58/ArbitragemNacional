@@ -1,8 +1,5 @@
 {
 
-
-"bitcointrade_key":"U2FsdGVkX19dI9sUsAUOt8+4qExvqU2nMtkGStyOg0aiQswXX1sXstBlUZ5MeWoN",
-
 "bitcointrade_secret":"U2FsdGVkX19dI9sUsAUOt8+4qExvqU2nMtkGStyOg0aiQswXX1sXstBlUZ5MeWoN",
 
 "bitcointrade_fee":0.5,
