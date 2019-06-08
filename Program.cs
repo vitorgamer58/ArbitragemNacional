@@ -129,7 +129,7 @@ class Program
             entryBraziliexBitCointrade.exchangeBuy = new ExchangeBraziliex();
             entryBraziliexBitCointrade.pairBuy = "btc_brl";
             entryBraziliexBitCointrade.exchangeSell = new ExchangeBitcoinTrade();
-            entryBraziliexBitCointrade.pairSell = "BTC";
+            entryBraziliexBitCointrade.pairSell = "BRLBTC";
             entryBraziliexBitCointrade.sleep = int.Parse(Program.jConfig["sleep_default"].ToString()); ;
             entryBraziliexBitCointrade.perc = decimal.Parse(Program.jConfig["arbitrage_percent"].ToString()); ;
             entryBraziliexBitCointrade.amount = decimal.Parse(Program.jConfig["arbitrage_amount"].ToString());
@@ -139,7 +139,7 @@ class Program
 
             EntryArbitrage entryBitCointradeBraziliex = new EntryArbitrage();
             entryBitCointradeBraziliex.exchangeBuy = new ExchangeBitcoinTrade();
-            entryBitCointradeBraziliex.pairBuy = "BTC";
+            entryBitCointradeBraziliex.pairBuy = "BRLBTC";
             entryBitCointradeBraziliex.exchangeSell = new ExchangeBraziliex();
             entryBitCointradeBraziliex.pairSell = "btc_brl";
             entryBitCointradeBraziliex.sleep = int.Parse(Program.jConfig["sleep_default"].ToString());

@@ -205,7 +205,7 @@ public class ExchangeBitcoinTrade : ExchangeBase, IExchange
 
 
 
-            String parameters = "{\"currency\":\"BTC\",\"amount\": " + amount.ToString().Replace(",", ".") + ",\"type\": \"" + type + "\",\"subtype\": \"limited\",\"unit_price\": " + Convert.ToString(price).Replace(",", ".") + "}";
+            String parameters = "{\"pair\":\"BRLBTC\",\"amount\": " + amount.ToString().Replace(",", ".") + ",\"type\": \"" + type + "\",\"subtype\": \"limited\",\"unit_price\": " + Convert.ToString(price).Replace(",", ".") + "}";
             var data = Encoding.ASCII.GetBytes(parameters);
             request.Headers["Authorization"] = "ApiToken " + this.getSecret();
             request.Method = "POST";
