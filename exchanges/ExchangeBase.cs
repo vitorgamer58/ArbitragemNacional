@@ -22,7 +22,6 @@ using System.Threading.Tasks;
             //balances.Rows.Add("LTC", "2,7893");
             //balances.Rows.Add("XMR", "1,956259");
             balances.Rows.Add("BTC", "990,0491");
-            balances.Rows.Add("BCH", "990,0491");
             balances.Rows.Add("ETH", "9990,87737");
             balances.Rows.Add("DASH", "9991,1158");
             balances.Rows.Add("LTC", "9992,7893");

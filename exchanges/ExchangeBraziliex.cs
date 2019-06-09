@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 public class ExchangeBraziliex : ExchangeBase, IExchange
 {
     public static decimal balance_usdt = 0;
-    public static decimal balance_bch = 0;
+    public static decimal balance_btc = 0;
 
     public ExchangeBraziliex()
     {
@@ -48,7 +48,7 @@ public class ExchangeBraziliex : ExchangeBase, IExchange
         String json = post("https://braziliex.com/api/v1/private", "command=balance", this.key, this.secret);
         JContainer jContainer = (JContainer)JsonConvert.DeserializeObject( json , (typeof(JContainer)));
 
-        balance_bch = decimal.Parse(jContainer["balance"]["bch"].ToString().Replace(".",","));
+        balance_btc = decimal.Parse(jContainer["balance"]["btc"].ToString().Replace(".",","));
         balance_usdt = decimal.Parse(jContainer["balance"]["brl"].ToString().Replace(".", ","));
 
         return json;
@@ -59,7 +59,7 @@ public class ExchangeBraziliex : ExchangeBase, IExchange
 
         try
         {
-            String json = Http.get("https://braziliex.com/api/v1/public/ticker/bch_brl");
+            String json = Http.get("https://braziliex.com/api/v1/public/ticker/btc_brl");
 
             JContainer j = (JContainer)JsonConvert.DeserializeObject(json, (typeof(JContainer)));
 
@@ -287,8 +287,8 @@ public class ExchangeBraziliex : ExchangeBase, IExchange
     {
         if (pair == "USDT")
             return balance_usdt;
-        if (pair == "BCH")
-            return balance_bch;
+        if (pair == "BTC")
+            return balance_btc;
 
         return 0m;
     }
