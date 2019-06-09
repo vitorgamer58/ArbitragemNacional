@@ -11,3 +11,7 @@ Leia mais na [Wiki](wiki)
 
 
 ## Donate
+NANO: nano_1zqyo39yn6j67duwoopg3wpiihpmq87i5dfewrqejjf8nuats5op3nwyku7s
+
+## Download
+Basta entrar em Releases neste fork, ou clicar [Aqui](releases), escolha os arquivos .ZIP de BTC e BCH, leia mais na [Wiki](wiki) sobre instruções de configuração.
