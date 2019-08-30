@@ -7,7 +7,7 @@ Este é um Bot de Arbitragem Semi Automática e Posicionada que opera nas exchan
 Você se posiciona em BRL e BTC nas duas exchanges, tão logo surja uma oportunidade ele venderá na de maior preço e comprará na de menor preço, por isso é importante manter um equilíbrio nas duas exchanges.
 
 
-Leia mais na [Wiki](wiki)
+Leia mais na [Wiki](https://github.com/vitorgamer58/ArbitragemNacional/wiki)
 
 
 ## Donate
